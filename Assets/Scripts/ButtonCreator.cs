@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -7,18 +5,14 @@ public class ButtonCreator : MonoBehaviour
 {
     [SerializeField] private Button buttonPrefab;
     [SerializeField] private Transform buttonParent;
-    [SerializeField] MessageConfig messageConfig;
+    [SerializeField] private MessageConfig messageConfig;
     [SerializeField] private Transform panel;
     private int messagesCount;
     private float positionCount = 1750f;
-
-    private void Start()
-    {
-        
-    }
+    
     public void CreateButtons()
     {
-        Button newButton = Instantiate(buttonPrefab, panel.transform);
+        Button newButton = Instantiate(buttonPrefab, panel);
         //newButton.transform.localScale = new Vector3(4f, 4f, 2f);
 
         MessageConfig.Authors randomAuthor = GetAuthor();
@@ -46,5 +40,6 @@ public class ButtonCreator : MonoBehaviour
 
         return string.Empty;
     }
+    
     
 }

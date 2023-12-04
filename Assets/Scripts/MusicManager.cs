@@ -43,35 +43,44 @@ public class MusicManager : MonoBehaviour
     {
         if (trackIndex >= 0 && trackIndex < musicTracks.Length)
         {
-            // Если трек не играет или трек изменился, тогда воспроизводим новый трек
             if (!audioSource.isPlaying || currentTrackIndex != trackIndex)
             {
-                // Если уже играет трек, останавливаем его
                 if (audioSource.isPlaying)
                 {
                     audioSource.Stop();
                 }
-
-                // Устанавливаем новый трек
+                
                 audioSource.clip = musicTracks[trackIndex];
                 Debug.Log($"Now track {trackIndex} is playing");
-
-                // Воспроизводим с сохраненной позиции
+                
                 audioSource.time = trackPosition;
                 audioSource.Play();
-
-                // Обновляем текущий индекс и позицию
+                
                 currentTrackIndex = trackIndex;
                 trackPosition = 0f;
             }
         }
     }
 
+    public bool IsPlaying()
+    {
+        return audioSource.isPlaying;
+    }
+
+    public float GetCurrentPosition()
+    {
+        return audioSource.time;
+    }
+
+    public float GetTotalDuration()
+    {
+        return audioSource.clip != null ? audioSource.clip.length : 0f;
+    }
+
     public void StopMusic()
     {
         if (audioSource.isPlaying)
         {
-            // Сохраняем текущую позицию трека перед остановкой
             trackPosition = audioSource.time;
             audioSource.Stop();
         }
