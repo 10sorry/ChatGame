@@ -10,7 +10,6 @@ public class MessageConfig : ScriptableObject
         public string authorName;
         public string[] messages;
     }
-
-    // Now you can use Alex as a part of MessageConfig
+    
     public Authors[] authors;
 }

@@ -33,7 +33,6 @@ public class ButtonCreator : MonoBehaviour
     {
         if (author != null && author.messages != null && author.messages.Length > 0)
         {
-            // You can implement a random selection logic here
             int randomIndex = Random.Range(0, author.messages.Length);
             return author.messages[randomIndex];
         }
