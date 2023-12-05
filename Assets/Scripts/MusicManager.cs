@@ -24,7 +24,7 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-    public AudioClip[] musicTracks;
+    [SerializeField] private AudioClip[] musicTracks;
     private AudioSource audioSource;
     private int currentTrackIndex = -1; // Индекс текущего трека
     private float trackPosition = 0f;  // Позиция текущего трека

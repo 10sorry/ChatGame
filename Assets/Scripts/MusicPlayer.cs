@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MusicPlayer : MonoBehaviour
 {
-    public AudioSource audioSource;
+    [SerializeField] private AudioSource audioSource;
 
     public void MusicPlay()
     {

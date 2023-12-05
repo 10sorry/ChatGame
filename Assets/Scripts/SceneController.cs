@@ -10,7 +10,7 @@ public class SceneController : MonoBehaviour
 
     public void ChatScene()
     {
-        SceneManager.LoadScene("ChatScene");
+        SceneManager.LoadScene("Chat");
     }
 
     public void MusicScene()
@@ -27,5 +27,26 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Start");
     }
+
+    public void PrivateChat()
+    {
+        SceneManager.LoadScene("PrivateChat");
+    }
+    
+    public void Quotes()
+    {
+        SceneManager.LoadScene("Quotes");
+    }
+    
+    public void Jokes()
+    {
+        SceneManager.LoadScene("Jokes");
+    }
+    
+    public void BestF()
+    {
+        SceneManager.LoadScene("BestF");
+    }
+    
 
 }

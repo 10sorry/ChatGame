@@ -4,10 +4,10 @@ using TMPro;
 
 public class PlaybackIndicator : MonoBehaviour
 {
-    public MusicManager musicManager;
-    public Slider playbackSlider;
-    public TextMeshProUGUI currentTimeText;
-    public TextMeshProUGUI totalTimeText;
+    [SerializeField] private MusicManager musicManager;
+    [SerializeField] private Slider playbackSlider;
+    [SerializeField] private TextMeshProUGUI currentTimeText;
+    [SerializeField] private TextMeshProUGUI totalTimeText;
 
     private void Start()
     {
