@@ -17,6 +17,11 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("Music");
     }
+    
+    public void ImagesScene()
+    {
+        SceneManager.LoadScene("Images");
+    }
 
     public void StartScene()
     {

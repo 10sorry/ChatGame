@@ -823,13 +823,13 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -1178,8 +1178,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.6572876, y: 78.68042}
-  m_SizeDelta: {x: -219.3741, y: -462.5371}
+  m_AnchoredPosition: {x: -0.28967285, y: 82.3922}
+  m_SizeDelta: {x: -178.18596, y: -478.2819}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1086606040
 MonoBehaviour:
@@ -1751,8 +1751,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 647d5319b383be1e8ae04cbf418fae67, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonCreator: {fileID: 0}
-  messageConfig: {fileID: 11400000, guid: ee07a36803c9975fca3f8224437f0a75, type: 2}
 --- !u!4 &1607819311
 Transform:
   m_ObjectHideFlags: 0
@@ -1938,11 +1936,11 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
-  - {fileID: 52247779}
-  - {fileID: 1447334439}
-  - {fileID: 1607819311}
-  - {fileID: 76788943}
+  - {fileID: 5972788433251724080}
   - {fileID: 904395115}
   - {fileID: 1021419125}
-  - {fileID: 5972788433251724080}
+  - {fileID: 76788943}
+  - {fileID: 52247779}
+  - {fileID: 1447334439}
+  - {fileID: 519420032}
+  - {fileID: 1607819311}

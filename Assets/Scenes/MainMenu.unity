@@ -321,13 +321,13 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -457,13 +457,13 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -823,13 +823,13 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
+  m_TextWrappingMode: 0
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
+  m_ActiveFontFeatures: 
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
@@ -1022,16 +1022,16 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 503145002}
   - {fileID: 420891872}
   - {fileID: 751584123}
+  - {fileID: 503145002}
   - {fileID: 942862097}
   m_Father: {fileID: 52247779}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.1965942, y: 78.707886}
-  m_SizeDelta: {x: -216.8713, y: -463.5449}
+  m_AnchoredPosition: {x: -0.28967285, y: 82.3922}
+  m_SizeDelta: {x: -178.18596, y: -478.2819}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &893741421
 MonoBehaviour:
@@ -1242,7 +1242,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8073841032049540815, guid: f330fd776ca0f7b3ca7b770850489224, type: 3}
         m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: MusicScene
+        m_MethodName: ImagesScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1458,6 +1458,10 @@ PrefabInstance:
       value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 5253913146449944107, guid: 0ecd7644802c2bc91b1da99db56680d6, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5253913146449944107, guid: 0ecd7644802c2bc91b1da99db56680d6, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.5
       objectReference: {fileID: 0}
@@ -1629,9 +1633,9 @@ MonoBehaviour:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 519420032}
+  - {fileID: 1048755030}
+  - {fileID: 1021419125}
   - {fileID: 52247779}
   - {fileID: 1447334439}
+  - {fileID: 519420032}
   - {fileID: 904395115}
-  - {fileID: 1021419125}
-  - {fileID: 1048755030}

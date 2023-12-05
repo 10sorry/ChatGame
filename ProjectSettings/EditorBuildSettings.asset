@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Music.unity
     guid: 1b8767157777157c38533ada17115a38
+  - enabled: 1
+    path: Assets/Scenes/Images.unity
+    guid: 0587ec10672deb54b8122f8f8f89ba54
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
