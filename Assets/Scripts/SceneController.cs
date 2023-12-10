@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
 public class SceneController : MonoBehaviour
 {
     public void MenuScene()
     {
         SceneManager.LoadScene("MainMenu");
+        
     }
 
     public void ChatScene()
@@ -47,6 +47,12 @@ public class SceneController : MonoBehaviour
     {
         SceneManager.LoadScene("BestF");
     }
+    public void Unknown()
+    {
+        SceneManager.LoadScene("Unknown");
+    }
+    
+    
     
 
 }

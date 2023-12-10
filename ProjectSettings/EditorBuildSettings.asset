@@ -29,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BestF.unity
     guid: fad1e4ef25ec98145b75943ab01e7ca5
+  - enabled: 1
+    path: Assets/Scenes/Unknown.unity
+    guid: 1bbe2b97f9c85e146a4ac9f6c716d50c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

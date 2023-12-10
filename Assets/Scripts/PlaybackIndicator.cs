@@ -6,6 +6,7 @@ public class PlaybackIndicator : MonoBehaviour
 {
     [SerializeField] private MusicManager musicManager;
     [SerializeField] private Slider playbackSlider;
+    [SerializeField] private Slider volumeSlider;
     [SerializeField] private TextMeshProUGUI currentTimeText;
     [SerializeField] private TextMeshProUGUI totalTimeText;
 
@@ -18,6 +19,8 @@ public class PlaybackIndicator : MonoBehaviour
 
         playButton.onClick.AddListener(PlayMusic);
         stopButton.onClick.AddListener(StopMusic);
+        volumeSlider.onValueChanged.AddListener(ChangeVolume);
+        volumeSlider.value = 1f;
     }
 
     private void Update()
@@ -32,7 +35,6 @@ public class PlaybackIndicator : MonoBehaviour
 
     private void UpdateUI()
     {
-        Debug.Log($"IsPlaying: {musicManager.IsPlaying()}, CurrentPosition: {musicManager.GetCurrentPosition()}, TotalDuration: {musicManager.GetTotalDuration()}");
 
         if (musicManager.IsPlaying())
         {
@@ -54,7 +56,18 @@ public class PlaybackIndicator : MonoBehaviour
     {
         musicManager.StopMusic();
     }
+    
+    private void ChangeVolume(float volume)
+    {
+        // Ensure that the volume value is within the valid range (0 to 1)
+        volume = Mathf.Clamp01(volume);
 
+        // Calculate the new volume based on the slider position
+        float newVolume = Mathf.Lerp(0f, 1f, volume);
+
+        // Set the volume of the MusicManager
+        musicManager.SetVolume(newVolume);
+    }
 
     private string FormatTime(float seconds)
     {

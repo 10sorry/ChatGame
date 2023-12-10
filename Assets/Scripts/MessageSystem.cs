@@ -11,7 +11,7 @@ public class MessageSystem : MonoBehaviour
 
     private int currentMariaMessageIndex = 0;
     private int currentYouMessageIndex = 0;
-
+    private float xOffset = 200f;
     private void Start()
     {
         sendButton.onClick.AddListener(SendMessage);
@@ -48,7 +48,6 @@ public class MessageSystem : MonoBehaviour
         sendButton.gameObject.SetActive(true);
         receiveButton.gameObject.SetActive(false);
     }
-
     private void CreateMessagePrefab(string authorName, string message)
     {
         GameObject newMessageObject = Instantiate(messagePrefab, messageParent);
